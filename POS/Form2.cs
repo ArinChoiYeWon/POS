@@ -110,61 +110,181 @@ namespace POS
         {
             listBox1.Items.Add(ACC.Text);
             listBox1.Items.Add(ACCC.Text);
+            if (meun_check == true)
+            {
+                 operand3  += "3500";
+                 textBox1.Text = AH.Text;
+                 total();
 
+            }
+            else
+            {
+                operand3 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void CC(object sender, EventArgs e)//카페라떼C
         {
             listBox1.Items.Add(CCC.Text);
             listBox1.Items.Add(CCCC.Text);
+         if (meun_check == true)
+         {
+                operand4 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+         }
+         else
+         {
+                operand4 += "0";
+                textBox1.Text = AH.Text;
+                total();
+         }
         }
 
         private void NHHH(object sender, EventArgs e)//녹차라떼H
         {
             listBox1.Items.Add(NHH.Text);
             listBox1.Items.Add(NH.Text);
+            if (meun_check == true)
+            {
+                operand5 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand5 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void NCCC(object sender, EventArgs e)//녹차라떼C
         {
             listBox1.Items.Add(NCC.Text);
             listBox1.Items.Add(NC.Text);
+            if (meun_check == true)
+            {
+                operand6 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand6 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void SHHH(object sender, EventArgs e)//고구마라떼H
         {
             listBox1.Items.Add(SHH.Text);
             listBox1.Items.Add(SH.Text);
+            if (meun_check == true)
+            {
+                operand7 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand7 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void SCCC(object sender, EventArgs e)//고구마라떼C
         {
             listBox1.Items.Add(SCC.Text);
             listBox1.Items.Add(SC.Text);
+            if (meun_check == true)
+            {
+                operand8 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand8 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void NPPP(object sender, EventArgs e)//녹차프라치노
         {
             listBox1.Items.Add(NPP.Text);
             listBox1.Items.Add(NP.Text);
+            if (meun_check == true)
+            {
+                operand9 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand9 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void CPPP(object sender, EventArgs e)//초코프라치노
         {
             listBox1.Items.Add(CPP.Text);
             listBox1.Items.Add(CP.Text);
+            if (meun_check == true)
+            {
+                operand10 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand10 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void YPPP(object sender, EventArgs e)//요거트프라치노
         {
             listBox1.Items.Add(YPP.Text);
             listBox1.Items.Add(YP.Text);
+            if (meun_check == true)
+            {
+                operand11 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand11 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void MCPPP(object sender, EventArgs e)//민트초코프라치노
         {
             listBox1.Items.Add(MCPP.Text);
             listBox1.Items.Add(MCP.Text);
+            if (meun_check == true)
+            {
+                operand12 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand12 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void ATTT(object sender, EventArgs e)//얼그레이
@@ -185,7 +305,7 @@ namespace POS
             listBox1.Items.Add(RT.Text);
         }
 
-        private void CMPPP(object sender, EventArgs e)//민트초코프라치노
+        private void CMPPP(object sender, EventArgs e)//캐모바일
         {
             listBox1.Items.Add(CMPP.Text);
             listBox1.Items.Add(CMP.Text);
