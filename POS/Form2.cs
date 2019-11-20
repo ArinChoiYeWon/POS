@@ -15,6 +15,19 @@ namespace POS
 
         string operand = "0"; // 피연산자1 저장
         string operand2 = "0"; // 피연산자2 저장
+        string operand3 = "0"; // 피연산자2 저장
+        string operand4 = "0"; // 피연산자2 저장
+        string operand5 = "0"; // 피연산자2 저장
+        string operand6 = "0"; // 피연산자2 저장
+        string operand7 = "0"; // 피연산자2 저장
+        string operand8 = "0"; // 피연산자2 저장
+        string operand9 = "0"; // 피연산자2 저장
+        string operand10 = "0"; // 피연산자2 저장
+        string operand11 = "0"; // 피연산자2 저장
+        string operand12 = "0"; // 피연산자2 저장
+        string operand13 = "0"; // 피연산자2 저장
+        string operand14 = "0"; // 피연산자2 저장
+        string operand15 = "0"; // 피연산자2 저장
         string sum0;
         string money;
         bool meun_check = true;
@@ -28,7 +41,24 @@ namespace POS
         {
             int num_operand = System.Convert.ToInt32(operand);// 변환
             int num_operand2 = System.Convert.ToInt32(operand2);//변환
-            result = num_operand + num_operand2;
+            int num_operand3 = System.Convert.ToInt32(operand3);//변환
+            int num_operand4 = System.Convert.ToInt32(operand4);//변환
+            int num_operand5 = System.Convert.ToInt32(operand5);//변환
+            int num_operand6 = System.Convert.ToInt32(operand6);//변환
+            int num_operand7 = System.Convert.ToInt32(operand7);//변환
+            int num_operand8 = System.Convert.ToInt32(operand8);//변환
+            int num_operand9 = System.Convert.ToInt32(operand9);//변환
+            int num_operand10 = System.Convert.ToInt32(operand10);//변환
+            int num_operand11 = System.Convert.ToInt32(operand11);//변환
+            int num_operand12 = System.Convert.ToInt32(operand12);//변환
+            int num_operand13 = System.Convert.ToInt32(operand13);//변환
+            int num_operand14 = System.Convert.ToInt32(operand14);//변환
+            int num_operand15 = System.Convert.ToInt32(operand15);//변환
+            
+            
+            
+            result = num_operand + num_operand2 + num_operand3 + num_operand4 + num_operand5 + num_operand6 + num_operand7 + 
+                num_operand8 + num_operand9 + num_operand10 + num_operand11+ num_operand12 + num_operand13 + num_operand14 + num_operand15;
             string result2 = System.Convert.ToString(result);//변환
             textBox1.Text = result2;
         }
@@ -59,6 +89,19 @@ namespace POS
             MessageBox.Show("결제 완료");
             operand = "";
             operand2 = "";
+            operand3 = "";
+            operand4 = "";
+            operand5 = "";
+            operand6 = "";
+            operand7 = "";
+            operand8 = "";
+            operand9 = "";
+            operand10 = "";
+            operand11 = "";
+            operand12 = "";
+            operand13 = "";
+            operand14 = "";
+            operand15 = "";
            
 
 
@@ -69,7 +112,7 @@ namespace POS
             listBox1.Items.Add(AH.Text);
             if (meun_check == true)
             {
-                operand = "3500";
+                operand += "3500";
                 textBox1.Text = AH.Text;
                 //meun_check = false;
                 total();
@@ -77,7 +120,7 @@ namespace POS
             }
             else
             {
-                operand = "0";
+                operand += "0";
                 textBox1.Text = AH.Text;
                 total();
             }
@@ -291,24 +334,72 @@ namespace POS
         {
             listBox1.Items.Add(ATT.Text);
             listBox1.Items.Add(AT.Text);
+            if (meun_check == true)
+            {
+                operand13 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand13 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }               
         }
 
         private void PTTT(object sender, EventArgs e)//페퍼민트
         {
             listBox1.Items.Add(PTT.Text);
             listBox1.Items.Add(PT.Text);
+            if (meun_check == true)
+            {
+                operand14 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand14 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void RTTT(object sender, EventArgs e)//레몬
         {
             listBox1.Items.Add(RTT.Text);
             listBox1.Items.Add(RT.Text);
+            if (meun_check == true)
+            {
+                operand15 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand15 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void CMPPP(object sender, EventArgs e)//캐모바일
         {
             listBox1.Items.Add(CMPP.Text);
             listBox1.Items.Add(CMP.Text);
+            if (meun_check == true)
+            {
+                operand15 += "4500";
+                textBox1.Text = AH.Text;
+                total();
+            }
+            else
+            {
+                operand15 += "0";
+                textBox1.Text = AH.Text;
+                total();
+            }
         }
 
         private void button19_Click(object sender, EventArgs e)//닫기
